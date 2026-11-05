@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "scheme": "allergens",
+    "name": "Compass Allergens",
+    "slug": "compass-compassallergens",
+    "owner": "allergen",
+    "privacy": "public",
+    "platforms": [
+      "android"
+    ],
+    "version": "DEV:v1.18",
+    "orientation": "landscape",
+    "backgroundColor": "#F2F6F8",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash2-1638px-tall.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F2F6F8"
+    },
+    "android": {
+      "package": "com.compass.compassallergens",
+      "useNextNotificationsApi": true,
+      "versionCode": 1,
+      "googleServicesFile": "./google-services-compass-dev.json",
+      "backgroundColor": "#F2F6F8",
+      "permissions": [],
+      "allowBackup": false
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "androidStatusBar": {
+      "hidden": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9aeaced3-7338-42d6-9b4d-206ec582bcd6"
+      },
+      "environment": "Development",
+      "login": {
+        "base": "https://compass-dev.auth.eu-west-1.amazoncognito.com",
+        "clientId": "1tuak2rtloskaqf293ufuuujhk",
+        "landingLogout": "https://dev-landing.compassconnect.com"
+      },
+      "backendURL": {
+        "menuPlansURL": {
+          "url": "https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/menuplanlist/%outletId"
+        },
+        "outletsURL": {
+          "url": "https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/tradingOutlet"
+        },
+        "outletMenuPlans": {
+          "url": "https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/getoutletmenuplans"
+        },
+        "tokenRegistration": {
+          "url": "https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/registerdevice"
+        }
+      }
+    }
+  }
+}

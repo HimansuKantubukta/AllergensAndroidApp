@@ -1,0 +1,16 @@
+  /**
+   * Sorts menu plans by default by description, however,
+   * if there is a custom ordering, makes sure the menu plans
+   * are sorted according to that ordering.
+   * @param {Array} menuPlans
+   */
+  // const sortMenuPlans = menuPlans => {
+  //   return menuPlans;
+  //   const defaultSort = menuPlans.sort((m1, m2) =>
+  //     m1.description.localeCompare(m2.description)
+  //   );
+  //   return defaultSort;
+  // };
+  // console.log(
+  //   `selectedMenuPlansLocal: ${JSON.stringify(selectedMenuPlansLocal)}`
+  // );

@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "version": ">= 3.3.2"
+  },
+  "build": {
+    "prd": {
+      "channel": "prd",
+      "env": {
+        "APP_ENV": "prd"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "uat": {
+      "channel": "uat",
+      "env": {
+        "APP_ENV": "uat"
+      },
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleUat"
+      }
+    },
+    "dev": {
+      "channel": "dev",
+      "env": {
+        "APP_ENV": "dev"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

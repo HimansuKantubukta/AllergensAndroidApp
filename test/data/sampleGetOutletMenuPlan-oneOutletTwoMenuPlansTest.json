@@ -1,0 +1,779 @@
+[
+  {
+    "outlet": "outletID",
+    "menu_plans": [
+      {
+        "id": "MP1",
+        "description": "Menu Plan 1",
+        "valid_from": "2020-01-01T00:00:00.000Z",
+        "valid_to": "2025-01-01T00:00:00.000Z",
+        "ReqDate": [
+          {
+            "requiredDate": "2020-01-01",
+            "dayPart": [
+              {
+                "dayPartCode": "DP1",
+                "dayPartDesc": "DayPart DP1",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "1",
+                        "longName": "Recipe in course 1",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "2",
+                        "longName": "Recipe in course 2",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "dayPartCode": "DP2",
+                "dayPartDesc": "DayPart DP2",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "1",
+                        "longName": "Recipe in course 1",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "2",
+                        "longName": "Recipe in course 2",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requiredDate": "2020-01-02",
+            "dayPart": [
+              {
+                "dayPartCode": "DP1",
+                "dayPartDesc": "DayPart DP1",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "100",
+                        "longName": "Recipe in course 1",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "101",
+                        "longName": "Recipe in course 2",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "dayPartCode": "DP2",
+                "dayPartDesc": "DayPart DP2",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "1",
+                        "longName": "Recipe in course 1",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "2",
+                        "longName": "Recipe in course 2",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MP2",
+        "description": "Menu Plan 2",
+        "valid_from": "2020-01-01T00:00:00.000Z",
+        "valid_to": "2025-01-01T00:00:00.000Z",
+        "ReqDate": [
+          {
+            "requiredDate": "2020-01-01",
+            "dayPart": [
+              {
+                "dayPartCode": "DP1",
+                "dayPartDesc": "DayPart DP1 in mp2",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "1",
+                        "longName": "Recipe in course 1 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "2",
+                        "longName": "Recipe in course 2 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "dayPartCode": "DP2",
+                "dayPartDesc": "DayPart DP2",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "1",
+                        "longName": "Recipe in course 1 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "2",
+                        "longName": "Recipe in course 2 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "requiredDate": "2020-01-02",
+            "dayPart": [
+              {
+                "dayPartCode": "DP1",
+                "dayPartDesc": "DayPart DP1",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "100",
+                        "longName": "Recipe in course 1 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "101",
+                        "longName": "Recipe in course 2 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "dayPartCode": "DP2",
+                "dayPartDesc": "DayPart DP2",
+                "course": [
+                  {
+                    "courseCode": "Course1",
+                    "item": [
+                      {
+                        "recipeId": "1",
+                        "longName": "Recipe in course 1 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 1 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  },
+                  {
+                    "courseCode": "Course2",
+                    "item": [
+                      {
+                        "recipeId": "2",
+                        "longName": "Recipe in course 2 (in mp2)",
+                        "itemNo": null,
+                        "itemPosition": null,
+                        "UOM": null,
+                        "name": "Recipe in course 2 (in mp2)",
+                        "contains": ["eggs"],
+                        "may_contain": ["milk"],
+                        "actualProduced": "1",
+                        "actualSales": "10",
+                        "bundle": null,
+                        "currency": "GBP",
+                        "fatCode": "H",
+                        "ind": null,
+                        "locPriceAllowed": "N",
+                        "locPriceExist": "N",
+                        "noAllergens": "N",
+                        "priceList": "SE",
+                        "prodHier": "Z0001002",
+                        "saltCode": null,
+                        "saturatesCode": null,
+                        "tillDesc": "TOM BASIL SCE",
+                        "yieldAllowed": "N",
+                        "yieldExists": "N",
+                        "costPrice": 0.94,
+                        "freeItem": 0,
+                        "ptnNo": 10,
+                        "sellingPrice": 0,
+                        "staffFeed": 0,
+                        "stdCostPrice": 0.26,
+                        "stdPtnNo": 1000,
+                        "stdSellingPrice": 0,
+                        "targetQty": 1,
+                        "type": 1,
+                        "vatRate": 0.2,
+                        "wastage": 0
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

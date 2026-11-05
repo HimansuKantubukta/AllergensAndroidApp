@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "320565179702",
+    "project_id": "compassallergen-prod",
+    "storage_bucket": "compassallergen-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320565179702:android:a0c28718ae19424d31ef97",
+        "android_client_info": {
+          "package_name": "com.compass.compassallergens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320565179702-4bqkq1infii5ubnf6rmtdf4rvor7r1q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoC7PDi8fQm8w_BunIDFISI3aO9tMdrcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320565179702-4bqkq1infii5ubnf6rmtdf4rvor7r1q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

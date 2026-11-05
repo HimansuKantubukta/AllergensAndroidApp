@@ -1,0 +1,35 @@
+### Use VS-Code with extension "Rest Client from Huachao Mao" to 
+### send these requests straight from VS code.
+### Make sure to replace KEY with the corresponding api key
+
+### [DEV] Outlets for employee
+GET https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/tradingOutlet/%userId HTTP/1.1
+x-api-key: KEY
+content-type: 'application/json'
+
+### [DEV] Menuplans for a specific outlet
+GET https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/menuplanlist/%outletId HTTP/1.1
+x-api-key: KEY
+content-type: 'application/json'
+
+### [DEV] OutletMenuPlans -> returns recipes, menu plans etc. 
+POST https://srm9jcenf2.execute-api.eu-west-1.amazonaws.com/dev/getoutletmenuplans HTTP/1.1
+content-type: application/json
+x-api-key: KEY
+
+{
+    "outlets": [
+            {
+                "id": "G20202",
+                "menu_plans":[
+                    "1"
+                ]
+            },
+            {
+                "id": "G20203",
+                "menu_plans":[
+                    "1"
+                ]
+            }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "168322254222",
+    "project_id": "compass-allergens-02",
+    "storage_bucket": "compass-allergens-02.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168322254222:android:1bbb2303de66e81352d0df",
+        "android_client_info": {
+          "package_name": "com.compass.compassallergens"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxRt7ypVa_qUmWoo9cqUrCI9W8gl9u_7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
