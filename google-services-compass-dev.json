@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "536373787108",
+    "project_id": "compass-notify-test",
+    "storage_bucket": "compass-notify-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536373787108:android:3059528bf24006340deff1",
+        "android_client_info": {
+          "package_name": "com.compass.compassallergens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536373787108-jha2vba80rchgi8ifoc44tpctoddjvhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRya-qysKRALtZs-N9erJt39E92TlzKFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536373787108-jha2vba80rchgi8ifoc44tpctoddjvhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
