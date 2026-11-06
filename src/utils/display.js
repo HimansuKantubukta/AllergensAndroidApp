@@ -48,7 +48,7 @@ export function filterRecipesFromSelections(
     allergens = context.allergens,
     possibleAllergens = context.possibleAllergens,
     selectedMenuPlanIds = context.selectedMenuPlanIds,
-    searchQueryFilter = context.searchQueryFilter,
+    searchQueryFilter = (context && context.searchQueryFilter) || '',
     allRecipes = context.allRecipes,
     excludeGFCereals = context.excludeGFCereals
   },
@@ -247,13 +247,19 @@ export function filterArrayByNotIn(
  * @param {String} searchQuery value of a searchQuery
  */
 function filterRecipesBySearchQuery(searchQuery, recipes) {
-  const searchText = searchQuery.toLowerCase();
-  const wordsFromSearch = searchText.trim().split(' ');
+  if (!searchQuery || typeof searchQuery !== 'string') {
+    return recipes || [];
+  }
+  const searchText = searchQuery.toLowerCase().trim();
+  if (!searchText) {
+    return recipes || [];
+  }
+  const wordsFromSearch = searchText.split(' ').filter(Boolean);
   let filteredData = [];
   for (let i = 0; i < wordsFromSearch.length; i++) {
     filteredData =
       i === 0
-        ? recipes.filter(item => {
+        ? (recipes || []).filter(item => {
           return (item.longName || '')
             .toLowerCase()
             .includes(wordsFromSearch[i]);
