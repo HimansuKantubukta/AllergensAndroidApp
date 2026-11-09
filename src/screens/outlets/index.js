@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { View, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { Text, CheckBox, Button } from 'react-native-elements';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import AdminHeader from '../../components/adminHeader';
 import styles from './styles';
 import AdminBottom from '../../components/adminBottom';
@@ -135,17 +136,21 @@ export default function Outlets({ navigation, route }) {
                     <CheckBox
                       containerStyle={styles.allergenCheckbox}
                       checked={checked(outlet.tradingOutletId)}
-                      iconType="material-community"
-                      checkedIcon="check-box-outline"
-                      uncheckedIcon="checkbox-blank-outline"
-                      // onPress={clickHandler(
-                      //   outlet.tradingOutletId,
-                      //   outlet.tradingOutletName,
-                      //   outlet.unit
-                      // )}
+                      checkedIcon={
+                        <MaterialCommunityIcons
+                          name="checkbox-marked-outline"
+                          size={24}
+                          color={theme.darkgray}
+                        />
+                      }
+                      uncheckedIcon={
+                        <MaterialCommunityIcons
+                          name="checkbox-blank-outline"
+                          size={24}
+                          color={theme.darkgray}
+                        />
+                      }
                       onPress={onOutletClicked(outlet)}
-                      checkedColor={theme.darkgray}
-                      uncheckedColor={theme.darkgray}
                     />
                   </TouchableOpacity>
                 ))}

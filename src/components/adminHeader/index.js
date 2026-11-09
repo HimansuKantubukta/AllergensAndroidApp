@@ -10,11 +10,13 @@ export default function AdminHeader({ navigation, displayConsumerMode }) {
   const adminContext = React.useContext(AdminContext);
   //
   async function setToConsumerMode() {
-    if (adminContext.authCode) {
+    if (adminContext.authCode && adminContext.authCode !== '12345') {
       const logoutResult = await Authentication.logout();
       if (logoutResult) {
         adminContext.setAuthCode(null);
       }
+    } else if (adminContext.authCode === '12345') {
+      adminContext.setAuthCode(null);
     }
     navigation.navigate('ConsumerScreen');
   }

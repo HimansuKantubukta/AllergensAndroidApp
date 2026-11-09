@@ -55,12 +55,14 @@ export default function CustomHeader({ options, navigation, inactivityReset }) {
    * Resets the state of the app.
    */
   const resetHandler = async () => {
-    if (adminContext.authCode) {
+    if (adminContext.authCode && adminContext.authCode !== '12345') {
       // if we have a session, we need to clear it.
       const logoutResult = await Authentication.logout();
       if (logoutResult) {
         adminContext.setAuthCode(null);
       }
+    } else if (adminContext.authCode === '12345') {
+      adminContext.setAuthCode(null);
     }
 
     // Aux function to call setSelected(false) on every item of array
@@ -214,6 +216,7 @@ export default function CustomHeader({ options, navigation, inactivityReset }) {
       { visibleRecipes, dayParts: data.day_parts },
       recipesContext
     );
+    setOpenSearch(false);
   };
 
   const handleSubmit = () => {

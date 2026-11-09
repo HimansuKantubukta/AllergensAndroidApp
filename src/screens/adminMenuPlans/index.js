@@ -2,6 +2,7 @@
 import React, { useEffect, useState, useMemo, useContext } from 'react';
 import { View, TouchableOpacity, ScrollView, TextInput } from 'react-native';
 import { Text, CheckBox, Button } from 'react-native-elements';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import axios from 'axios';
 import { uniqBy } from 'ramda';
 import AdminHeader from '../../components/adminHeader';
@@ -192,9 +193,20 @@ function renderMergeMenuPlansOption(
       textStyle={styles.checkOptionTextStyle}
       containerStyle={styles.allergenCheckbox}
       checked={outletSettings[outletId] && outletSettings[outletId].merged}
-      iconType="material-community"
-      checkedIcon="check-box-outline"
-      uncheckedIcon="checkbox-blank-outline"
+      checkedIcon={
+        <MaterialCommunityIcons
+          name="checkbox-marked-outline"
+          size={24}
+          color={theme.darkgray}
+        />
+      }
+      uncheckedIcon={
+        <MaterialCommunityIcons
+          name="checkbox-blank-outline"
+          size={24}
+          color={theme.darkgray}
+        />
+      }
       onPress={() => {
         setOutletSettings({
           ...outletSettings,
@@ -205,8 +217,6 @@ function renderMergeMenuPlansOption(
           }
         });
       }}
-      checkedColor={theme.darkgray}
-      uncheckedColor={theme.darkgray}
       enabled
     />
   );
@@ -612,16 +622,25 @@ export default function MenuPlans({ navigation }) {
                                           menu.planId,
                                           outletBeingRendered.outletId
                                         )}
-                                        iconType="material-community"
-                                        checkedIcon="check-box-outline"
-                                        uncheckedIcon="checkbox-blank-outline"
+                                        checkedIcon={
+                                          <MaterialCommunityIcons
+                                            name="checkbox-marked-outline"
+                                            size={24}
+                                            color={theme.darkgray}
+                                          />
+                                        }
+                                        uncheckedIcon={
+                                          <MaterialCommunityIcons
+                                            name="checkbox-blank-outline"
+                                            size={24}
+                                            color={theme.darkgray}
+                                          />
+                                        }
                                         onPress={clickHandler(
                                           menu.planId,
                                           outletBeingRendered.outletId,
                                           menu.description
                                         )}
-                                        checkedColor={theme.darkgray}
-                                        uncheckedColor={theme.darkgray}
                                       />
                                     </TouchableOpacity>
                                     {/* 
