@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.compass.compassallergens">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
   <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
   <uses-permission android:name="android.permission.INTERNET"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -6,7 +6,6 @@
   <uses-permission android:name="android.permission.VIBRATE"/>
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
   <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
 
   <queries>
     <intent>
@@ -25,10 +24,6 @@
     android:usesCleartextTraffic="true">
 
     <meta-data android:name="expo.modules.updates.ENABLED" android:value="false"/>
-    <meta-data android:name="expo.modules.updates.EXPO_SDK_VERSION" android:value="43.0.0"/>
-    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ALWAYS"/>
-    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="0"/>
-    <meta-data android:name="expo.modules.updates.EXPO_UPDATE_URL" android:value="https://exp.host/@allergen/compass-compassallergens"/>
     <meta-data android:name="android:windowFullscreen" android:value="true" />
     <activity
       android:name=".MainActivity"
@@ -38,7 +33,7 @@
       android:windowSoftInputMode="adjustResize"
       android:theme="@style/Theme.App.SplashScreen"
       android:screenOrientation="landscape"
-      android:immersive="true">
+      android:exported="true">
 
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
@@ -50,10 +45,7 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="allergens"/>
-        <!-- Add additional schemes if necessary -->
       </intent-filter>
     </activity>
-
-    <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
   </application>
 </manifest>

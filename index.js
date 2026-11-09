@@ -1,4 +1,13 @@
 import 'react-native-gesture-handler';
+import { InteractionManager } from 'react-native';
+
+if (!InteractionManager.createInteractionHandle) {
+  InteractionManager.createInteractionHandle = () => 1;
+}
+if (!InteractionManager.clearInteractionHandle) {
+  InteractionManager.clearInteractionHandle = () => {};
+}
+
 import { registerRootComponent } from 'expo';
 
 import App from './App';

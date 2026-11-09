@@ -13,11 +13,12 @@ import styles from './styles';
 import { AWSHostedUILoginURL } from '../../../config/urls';
 import AuthTokenPopup from '../../components/popups/authTokenPopup';
 
+const extra =
+  Constants?.expoConfig?.extra || Constants?.manifest?.extra || {};
 const isDebug =
-  Constants &&
-  Constants.manifest &&
-  Constants.manifest.extra &&
-  Constants.manifest.extra.debug;
+  !!extra.debug ||
+  extra.environment !== 'prd' ||
+  (typeof __DEV__ !== 'undefined' && __DEV__);
 
 // This is temporary until we have a login:
 
@@ -138,7 +139,7 @@ export default function HomeScreen({ navigation }) {
             />
           </TouchableOpacity>
           {/* Display a fake login button if running in development */}
-          {__DEV__ ? (
+          {isDebug ? (
             <TouchableOpacity
               onPress={() => fakeLogin()}
               activeOpacity={0.7}
@@ -155,7 +156,7 @@ export default function HomeScreen({ navigation }) {
             </TouchableOpacity>
           ) : null}
           {/* Allow manually entering the auth token */}
-          {__DEV__ ? (
+          {isDebug ? (
             <>
               <AuthTokenPopup
                 visible={authTokenPopupVisible}

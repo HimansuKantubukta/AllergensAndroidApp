@@ -62,7 +62,7 @@ export function computeContainerWidth(itemsArr) {
 /**
  *
  */
-export default DayParts = ({ navigation, items, itemsPerInterval }) => {
+const DayParts = ({ navigation, items, itemsPerInterval }) => {
   const scrollRef = useRef();
 
   const nonRepeatedItems = uniqBy(x => x.description, items).filter(
@@ -121,6 +121,8 @@ export default DayParts = ({ navigation, items, itemsPerInterval }) => {
     </View>
   );
 };
+
+export default DayParts;
 
 // Unnecessary code. FIXME
 

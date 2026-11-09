@@ -90,18 +90,25 @@ export default StyleSheet.create({
     color: theme.offwhite,
     textDecorationLine: 'underline'
   },
+  headerContainer: {
+    backgroundColor: theme.dark,
+    width: '100%',
+    height: 200
+  },
   headerTopRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 20,
-    marginHorizontal: 40
-    //backgroundColor: 'red'
+    paddingHorizontal: 40
   },
   headerSecondRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: 40
-    //backgroundColor: 'red'
+    paddingHorizontal: 40,
+    backgroundColor: theme.dark,
+    minHeight: 50,
+    paddingVertical: 6,
+    width: '100%'
   },
   search: {
     flexDirection: 'row',

@@ -40,8 +40,12 @@ const WrapperStack = ({ inactivityReset }) => (
   <StackWrapper.Navigator
     initialRouteName="HomeNavigation"
     screenOptions={{
-      header: ({ scene, navigation }) => {
-        const { options } = scene.descriptor;
+      header: (headerProps) => {
+        const options =
+          headerProps.options ||
+          headerProps.scene?.descriptor?.options ||
+          {};
+        const navigation = headerProps.navigation;
         return (
           <CustomHeader
             options={options}
@@ -52,10 +56,20 @@ const WrapperStack = ({ inactivityReset }) => (
       },
       headerStyle: {
         height: 200, // Specify the height of your custom header
+        minHeight: 185,
         backgroundColor: theme.dark
       }
     }}>
-    <StackWrapper.Screen name="HomeNavigation" component={ConsumerStack} />
+    <StackWrapper.Screen
+      name="HomeNavigation"
+      component={ConsumerStack}
+      options={{
+        headerStyle: {
+          height: 200,
+          backgroundColor: theme.dark
+        }
+      }}
+    />
   </StackWrapper.Navigator>
 );
 

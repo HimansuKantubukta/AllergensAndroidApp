@@ -1,9 +1,8 @@
 import { Image } from 'react-native-elements';
 import React from 'react';
-import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import theme from '../../styles/theme.style';
 import { formatAmount } from '../../utils/currencies';
-import { View } from 'native-base';
 
 const wasteFriendlyImage = require('../../../assets/wasteFriendly.png');
 

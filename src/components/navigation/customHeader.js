@@ -253,7 +253,7 @@ export default function CustomHeader({ options, navigation, inactivityReset }) {
   return (
     <RecipesContext.Consumer>
       {data => (
-        <View style={options.headerStyle}>
+        <View style={[styles.headerContainer, options.headerStyle]}>
           <View style={styles.headerTopRow}>
             <DietaryRequirements
               visible={modalVisible}

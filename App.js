@@ -4,10 +4,17 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import * as Font from 'expo-font';
+import { registerCustomIconType } from 'react-native-elements';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
+
+registerCustomIconType('material-community', MaterialCommunityIcons);
+registerCustomIconType('material', MaterialIcons);
+registerCustomIconType('font-awesome', FontAwesome);
 import { StatusBar, SafeAreaView, StyleSheet, LogBox } from 'react-native';
 import _ from 'lodash';
 import { NavigationContainer } from '@react-navigation/native';
-import AppLoading from 'expo-app-loading';
 import { setCustomText } from 'react-native-global-props';
 import { enableScreens } from 'react-native-screens';
 import MenuContext, {
@@ -78,7 +85,10 @@ function loadFonts() {
     'nunito-extra-bold': require('./assets/fonts/Nunito-ExtraBold.ttf'),
     'nunito-medium': require('./assets/fonts/Nunito-Regular.ttf'),
     'nunito-regular': require('./assets/fonts/Nunito-Regular.ttf'),
-    'nunito-light': require('./assets/fonts/Nunito-Light.ttf')
+    'nunito-light': require('./assets/fonts/Nunito-Light.ttf'),
+    ...MaterialCommunityIcons.font,
+    ...MaterialIcons.font,
+    ...FontAwesome.font
   });
 }
 
@@ -500,9 +510,7 @@ export default class App extends React.Component {
           </AdminContext.Provider>
         </RecipesContext.Provider>
       </MenuContext.Provider>
-    ) : (
-      <AppLoading />
-    );
+    ) : null;
   }
 }
 

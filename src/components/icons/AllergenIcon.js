@@ -1,7 +1,8 @@
 /* eslint-disable global-require */
 import React, { useState } from 'react';
-import { Image, Icon, CheckBox, Button } from 'react-native-elements';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Icon, CheckBox, Button } from 'react-native-elements';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import theme from '../../styles/theme.style';
 import { allergenIconImgSrc, allergenText } from '../../../config/allergens';
 
@@ -92,9 +93,20 @@ export default function AllergenIcon({
               containerStyle={styles.allergenCheckbox}
               title={capitalize(s.allergen)}
               checked={s.selected}
-              iconType="material-community"
-              checkedIcon="check-box-outline"
-              uncheckedIcon="checkbox-blank-outline"
+              checkedIcon={
+                <MaterialCommunityIcons
+                  name="checkbox-marked-outline"
+                  size={24}
+                  color={theme.darkgray}
+                />
+              }
+              uncheckedIcon={
+                <MaterialCommunityIcons
+                  name="checkbox-blank-outline"
+                  size={24}
+                  color="#bfbfbf"
+                />
+              }
               onPress={() => handleSubtypePress(s)}
               checkedColor={theme.darkgray}
               fontFamily={s.selected ? 'nunito-light' : 'nunito-medium'}
@@ -113,9 +125,20 @@ export default function AllergenIcon({
               title="Exclude Recipes that contain Cereals with Gluten Free"
               checked={excludeGFCereals}
               onPress={() => setExcludeGFCereals(!excludeGFCereals)}
-              iconType="material-community"
-              checkedIcon="check-box-outline"
-              uncheckedIcon="checkbox-blank-outline"
+              checkedIcon={
+                <MaterialCommunityIcons
+                  name="checkbox-marked-outline"
+                  size={24}
+                  color={theme.darkgray}
+                />
+              }
+              uncheckedIcon={
+                <MaterialCommunityIcons
+                  name="checkbox-blank-outline"
+                  size={24}
+                  color="#bfbfbf"
+                />
+              }
               containerStyle={styles.gfCheckbox}
             />
           </View>
@@ -125,17 +148,17 @@ export default function AllergenIcon({
   }
 
   return (
-    <View>
-      <View style={styles.allergenIconContainer}>
+    <View style={tooltipOpen ? { zIndex: 9999, elevation: 9999 } : null}>
+      <View style={[styles.allergenIconContainer, tooltipOpen ? { zIndex: 9999, elevation: 9999 } : null]}>
         {/* Use the presence of an onSelect handler to render an interactive icon */}
         {onSelect ? (
           <TouchableOpacity onPress={handlePress}>
             <View style={[styles.iconAndCrossContainer]}>
               <Image
-                containerStyle={selected ? styles.reducedOpacity : null}
                 source={src}
                 style={[
                   selected ? styles.selected : styles.notSelected,
+                  selected ? styles.reducedOpacity : null,
                   { width: size, height: size }
                 ]}
               />
@@ -148,6 +171,7 @@ export default function AllergenIcon({
             source={src}
             style={[
               selected ? styles.selected : styles.notSelected,
+              selected ? styles.reducedOpacity : null,
               { width: width || 54, height: width || 54 }
             ]}
           />
@@ -284,10 +308,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 80,
     left: iconWidth / 2 - tooltipWidth / 2 + iconPadding / 2, // -120,
-    zIndex: 1,
+    zIndex: 9999,
     backgroundColor: 'white',
     borderColor: 'rgba(151,151,151,0.25)',
     borderWidth: 1,
+    borderRadius: 8,
     width: tooltipWidth,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -295,7 +320,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.8,
     shadowRadius: 4,
-    elevation: 400
+    elevation: 9999
   },
   arrow: {
     position: 'absolute',
@@ -306,7 +331,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderColor: 'rgba(151,151,151,0.25)',
     transform: [{ rotateZ: '45deg' }],
-    elevation: 4000,
+    zIndex: 10000,
+    elevation: 10000,
     borderWidth: 0,
     borderTopWidth: 1,
     borderLeftWidth: 1,

@@ -44,17 +44,17 @@ export function uniqueRecipesById(recipes) {
  * @returns {Array} visible recipes set in the context
  */
 export function filterRecipesFromSelections(
-  {
-    allergens = context.allergens,
-    possibleAllergens = context.possibleAllergens,
-    selectedMenuPlanIds = context.selectedMenuPlanIds,
-    searchQueryFilter = (context && context.searchQueryFilter) || '',
-    allRecipes = context.allRecipes,
-    excludeGFCereals = context.excludeGFCereals
-  },
-  context
+  selections = {},
+  context = {}
 ) {
-  const { setVisibleRecipes, vsibleDayParts } = context;
+  const allergens = selections.allergens ?? context?.allergens ?? [];
+  const possibleAllergens = selections.possibleAllergens ?? context?.possibleAllergens ?? [];
+  const selectedMenuPlanIds = selections.selectedMenuPlanIds ?? context?.selectedMenuPlanIds ?? [];
+  const searchQueryFilter = selections.searchQueryFilter ?? context?.searchQueryFilter ?? '';
+  const allRecipes = selections.allRecipes ?? context?.allRecipes ?? [];
+  const excludeGFCereals = selections.excludeGFCereals ?? context?.excludeGFCereals ?? false;
+
+  const { setVisibleRecipes, vsibleDayParts } = context || {};
 
   // Filter the visible recipes by all criteria
 
@@ -89,14 +89,14 @@ export function filterRecipesFromSelections(
 }
 
 export function filterDayPartsFromMenuPlans(
-  {
-    selectedMenuPlanIds = context.selectedMenuPlanIds,
-    dayParts,
-    visibleRecipes = context.visibleRecipes
-  },
-  context
+  selections = {},
+  context = {}
 ) {
-  const { setVisibleDayParts } = context;
+  const selectedMenuPlanIds = selections.selectedMenuPlanIds ?? context?.selectedMenuPlanIds ?? [];
+  const dayParts = selections.dayParts ?? [];
+  const visibleRecipes = selections.visibleRecipes ?? context?.visibleRecipes ?? [];
+
+  const { setVisibleDayParts } = context || {};
   let result = filterByValues(dayParts, 'menu_plan', selectedMenuPlanIds);
   // Filter out day parts that don't have recipes visible.
   result = result.filter(d => visibleRecipes.find(r => r.day_part === d.id));
